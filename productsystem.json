@@ -1,0 +1,16 @@
+{
+  "username": "eric2024@gmail.com",
+  "password": "Customer@123",
+  "category": "Test-200",
+  "sub_category": "Sub Category for testing 2",
+  "productname": "Thresold",
+  "brandname": "Th",
+  "description": "Hello how are you",
+  "itemtype": "Furniture",
+  "UOM": "piece",
+  "sale_amount": "500",
+  "shipping_terms":"Shipping terms",
+  "payment_terms": "Pay 100",
+  "shipping_methods": "test",
+  "vendor":"Everest Polymers"
+}
