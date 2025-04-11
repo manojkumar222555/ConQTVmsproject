@@ -7,20 +7,19 @@ export class UserManagementPage {
     Dashboard:
       ".d-flex.align-items-center.justify-content-start.link-side.active-side-link",
     Administrator:
-      "body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(8) > div:nth-child(2) > svg:nth-child(2)",
+      "body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > svg:nth-child(2)",
     UserAuthentication:
-      "body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(9) > div:nth-child(1) > span:nth-child(1)",
-    UserManagement: ".tab-label.nav-link",
-    AddnewUserbtn: ".user-purchase-btn",
+      "body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(4) > div:nth-child(1) > span:nth-child(1)",
+    UserManagementtab: ".tab-label.nav-link",
+    Addnewuserbtn: ".purchase-btn",
     Submitbtn: "button[type='submit']",
     Firstname: "input[placeholder='Enter First Name']",
     Lastname: "input[placeholder='Enter Last Name']",
     Email: "input[placeholder='Enter Email']",
-    Phonenumber: "input[placeholder='Enter Phone number']",
+    Phonenumber: "input[placeholder='Enter Phone Number']",
     Password: "input[placeholder='Enter Password']",
-    Showhidebtn: "img[alt='Show Password']",
-    Usertype: "#userType",
-    Role: "#role",
+    Usertype: "#UserType",
+    Role: "#roleId",
     PopupCreatebtn: ".approve-popup-approve-btn",
     Continuebtn: ".admin-delete-continue-btn",
     Viewiconbtn:
@@ -31,11 +30,11 @@ export class UserManagementPage {
       "div[id='row-1'] div[id='cell-6-undefined'] div:nth-child(3) svg path",
     Delete_Cancelbtn: "button[class='admin-cancel-btn']",
     Confirmdeletebtn: ".admin-cancel-btn.admin-delete-btn",
-    Searchfilter: "input[placeholder='Search']",
+    Searchfilter: "input[placeholder='Search by name, email, number']",
   };
 
   openurl() {
-    cy.visit("https://test.conqt.com/");
+    cy.visit("https://vendor-test.conqt.com/");
   }
 
   enterusername(username) {
@@ -62,16 +61,16 @@ export class UserManagementPage {
     cy.get(this.weblocators.Administrator).click();
   }
 
-  ClickonUserAuthentication() {
+  UserAuthentication() {
     cy.get(this.weblocators.UserAuthentication).click();
   }
 
-  ClickonUserManagement() {
-    cy.get(this.weblocators.UserManagement).click();
+  UserManagementtab() {
+    cy.get(this.weblocators.UserManagementtab).click();
   }
 
-  AddnewUserbtn() {
-    cy.get(this.weblocators.AddnewUserbtn).click();
+  Addnewuserbtn() {
+    cy.get(this.weblocators.Addnewuserbtn).click();
   }
 
   Submitbtn() {
@@ -96,10 +95,6 @@ export class UserManagementPage {
 
   Password(Password) {
     cy.get(this.weblocators.Password).type(Password);
-  }
-
-  Showhidebtn() {
-    cy.get(this.weblocators.Showhidebtn).click();
   }
 
   Usertype(Usertype) {
@@ -146,15 +141,51 @@ export class UserManagementPage {
     cy.get(this.weblocators.Searchfilter).type(Searchfilter);
   }
 
+  // RoleName(RoleName) {
+  //   cy.get(this.weblocators.RoleName).type(RoleName);
+  // }
+
+  // Description(Description) {
+  //   cy.get(this.weblocators.Description).type(Description);
+  // }
+
+  // Togglebtn() {
+  //   cy.get(this.weblocators.Togglebtn).click();
+  // }
+
+  // Submitbtn() {
+  //   cy.get(this.weblocators.Submitbtn).click();
+  // }
+
+  // Viewiconbtn() {
+  //   cy.get(this.weblocators.Viewiconbtn).click();
+  // }
+
+  // Editbtn() {
+  //   cy.get(this.weblocators.Editbtn).click();
+  // }
+
+  // Cancelbtn() {
+  //   cy.get(this.weblocators.Cancelbtn).click();
+  // }
+
+  // Editiconbtn() {
+  //   cy.get(this.weblocators.Editiconbtn).click();
+  // }
+
+  // Deleteiconbtn() {
+  //   cy.get(this.weblocators.Deleteiconbtn).click();
+  // }
+
   TableData() {
-    let totalPages = 7;
-    for (let p = 2; p <= totalPages; p++) {
-      if (totalPages > 2) {
+    let totalPages1 = 1;
+    for (let p = 2; p <= totalPages1; p++) {
+      if (totalPages1 > 2) {
         cy.log("Active page is>>>" + p);
         cy.get(".new-pagination-container>p:nth-child(" + p + ")").click();
         cy.wait(1000);
 
-        cy.get("div[class='sc-fLseNd goIziV rdt_TableBody']>div").each(
+        cy.get("div[class='sc-hIPBNq eXWrwD rdt_TableBody']>div").each(
           ($row, index, $rows) => {
             cy.wrap($row).within(() => {
               cy.get("div").each(($col, index, $cols) => {
@@ -166,6 +197,6 @@ export class UserManagementPage {
       }
     }
 
-    cy.reload();
+    // cy.reload();
   }
 }
