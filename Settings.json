@@ -1,0 +1,73 @@
+{
+  "firstname": "Eric",
+  "lastname": "John",
+  "profile": "QA Analyst",
+  "Position": "Senior QA",
+  "phone": "8000018857",
+  "mobile": "8000018857",
+  "department": "information",
+  "country" : "India",
+  "state": "Rajasthan",
+  "city": "Jaipur",
+  "Street": "Sitapura",
+  "zipcode": "125325",
+
+  "Registeredcountry":"India",
+  "vendorType":"Domestic",
+  "companyType":"Company",
+  "capital":"52000",
+  "Date": "2020-05-20",
+  "exist_username":"Y4533214@gmail.com",
+
+  "v_password":"Yanka@2025",
+ 
+  
+
+
+  "confirmpass":"Yanka@2025",
+  "companyname1":"Tiny",
+   "website":"http://conqt.com",
+  "phonenumber1":"918000018857",
+  
+  "mobilenumber1":" 919566348535",
+ 
+  "addr1":"Sitapura",
+  "addr2":"Rajpura",
+  "orgstate":"Rajathan",
+  "orgcity":"Jaipur",
+ "postalcode":"200000",
+
+
+ "orgfirstname": "Ankush",
+  "orglastname": "Kumar",
+  "email": "Ankush22@gmail.com",
+  "phoneno": "8000056625",
+  "orgdepartment": "Finance",
+  "position": "Coach",
+  "whatsappno": "7000001525",
+  "alternateno": "8002251554",
+
+  "TypeofBusiness": "Manufacturer",
+  "Experience": "Over 3 Years",
+  "Workingday": "5 days",
+  "Workingtime": "10 Hours",
+  "Biddingcategories": "Goods",
+  "top3cust": "Testng",
+
+  "BankName": "Bank of Baroda",
+  "BankAccountNo": "52695869568",
+  "AccountType": "Savings account",
+  "BranchLocation": "Mumbai",
+  "IFSCSwiftcode": "JH5246",
+
+  "AnnualRevenue": "56232",
+  "Nameofparent": "Kick",
+  "Paymentterm": "BLP-60D",
+
+  "Minimum": "522",
+  "Maximum": "569999",
+  "Doescompanylimit": "5444",
+  "Doescompanydelivered": "Thenc",
+  "Projectreference": "Therwebc",
+  "SupplierQuality": "ISO 37001 Certification"
+}
